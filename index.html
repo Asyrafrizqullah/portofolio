@@ -5,28 +5,242 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Muh Asyraf Rizqullah S.kom</title>
+    <!-- Menghubungkan stylesheet Bootstrap -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <!-- Menghubungkan font awesome untuk ikon -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    <!-- Menghubungkan stylesheet custom -->
     <link rel="stylesheet" href="./style.css">
+    <link rel="shortcut icon" href="./Asset/Images/1.jpg" type="image/jpg">
 </head>
 
 <body>
-    <header class="header">
-        <h1>Selamat Datang, Pada Portofolio saya</h1>
+
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <a class="navbar-brand" href="index.html">Portofolio</a>
+        <!-- Tombol navigasi saat tampilan kecil -->
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
+            aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <!-- Daftar navigasi -->
+            <ul class="navbar-nav ml-auto">
+                <li class="nav-item active">
+                    <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#about">About Me</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#projek">Project</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#contact">Contact</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Bagian header (jumbotron) -->
+    <header class="jumbotron text-center">
+        <h1>Universitas Amikom yogyakarta</h1>
+        <h4>Bachelor of <strong> Computer Engineering faculty</strong> in <Strong>Informatics</Strong>
+        </h4>
+        <img src="./Images/amikom.jpg" alt="">
     </header>
-    <div class="container">
-        <h2>Profil Anda</h2>
-        <p>Nama: John Doe</p>
-        <p>Jurusan: Ilmu Komputer</p>
-        <p>Universitas: Contoh University</p>
-        <h2>Keahlian Anda</h2>
-        <ul>
-            <li>Algoritma dan Struktur Data</li>
-            <li>Pemrograman Web</li>
-            <li>Pembelajaran Mesin</li>
-        </ul>
-    </div>
-    <footer class="footer">
-        <p>&copy; 2023 Contoh University</p>
+
+    <!-- Bagian tentang saya -->
+    <section id="about" class="container">
+        <div class="row">
+            <div class="col-md-6">
+                <h2>Muh Asyraf Rizqullah S.kom
+                </h2>
+                <h5>As a web developer, I am relatively new to the ecosystem but have acquired experience through my
+                    college education in creating responsive and fully functional websites. I possess a solid grasp of
+                    programming languages like HTML, CSS, PHP, and JavaScript, along with expertise in enhancing website
+                    performance and ensuring data security.</h5>
+                <br>
+                <h5>My educational journey took place at <b>UNIVERSITAS AMIKOM YOGYAKARTA</b> , which played a
+                    significant role in shaping my career. With a <b>bachelor's degree in Computer Engineering</b>, I
+                    have established a strong foundation in computer science and information technology. Throughout my
+                    college years, I actively participated in various web development projects, allowing me to hone my
+                    programming skills, design effective layouts, and gain insights into best practices in frontend
+                    development.
+                </h5>
+            </div>
+            <div class="col-md-6">
+                <img src="./Images/2.jpg" alt="" class="img-fluid rounded-circle">
+            </div>
+        </div>
+    </section>
+
+    <!-- Bagian portfolio -->
+    <section id="portfolio" class="bg-light">
+        <div class="container text-center">
+            <h2>Project</h2>
+            <div class="row">
+                <div class="col-md-6">
+                    <!-- Item portofolio 1 -->
+                    <div class="portfolio-item">
+                        <strong>Login</strong>
+                        <img src="./Images/login.jpg" alt="Project 1" class="square-image">
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <!-- Item portofolio 1 -->
+                    <div class="portfolio-item">
+                        <strong>Register</strong>
+                        <img src="./Images/register.jpg" alt="Project 1" class="square-image">
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <!-- Item portofolio 1 -->
+                    <div class="portfolio-item">
+                        <strong>Homepage</strong>
+                        <img src="./Images/Project.jpg" alt="Project 1" class="square-image">
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <!-- Item portofolio 2 -->
+                    <div class="portfolio-item">
+                        <strong>Homepage-Promo</strong>
+                        <img src="./Images/project 2.jpg" alt="Project 2" class="square-image">
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <!-- Item portofolio 2 -->
+                    <div class="portfolio-item">
+                        <strong>Homepage-Rekomendasi</strong>
+                        <img src="./Images/project 3.jpg" alt="Project 2" class="square-image">
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <!-- Item portofolio 2 -->
+                    <div class="portfolio-item">
+                        <strong>List Hotel</strong>
+                        <img src="./Images/list hotel.jpg" alt="Project 2" class="square-image">
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <!-- Item portofolio 2 -->
+                    <div class="portfolio-item">
+                        <strong>Detail Hotel</strong>
+                        <img src="./Images/Detail Hotel 1.jpg" alt="Project 2" class="square-image">
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <!-- Item portofolio 2 -->
+                    <div class="portfolio-item">
+                        <strong>Detail Hotel</strong>
+                        <img src="./Images/Detail Hotel 2.jpg" alt="Project 2" class="square-image">
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <!-- Item portofolio 2 -->
+                    <div class="portfolio-item">
+                        <strong>Booking</strong>
+                        <img src="./Images/Booking.jpg" alt="Project 2" class="square-image">
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <!-- Item portofolio 2 -->
+                    <div class="portfolio-item">
+                        <strong>Booking 2</strong>
+                        <img src="./Images/Booking 2.jpg" alt="Project 2" class="square-image">
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <!-- Item portofolio 2 -->
+                    <div class="portfolio-item">
+                        <strong>Booking 3</strong>
+                        <img src="./Images/Booking 3.jpg" alt="Project 2" class="square-image">
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <!-- Item portofolio 2 -->
+                    <div class="portfolio-item">
+                        <strong>Booking 4</strong>
+                        <img src="./Images/Booking 4.jpg" alt="Project 2" class="square-image">
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <!-- Item portofolio 2 -->
+                    <div class="portfolio-item">
+                        <strong>History</strong>
+                        <img src="./Images/History.jpg" alt="Project 2" class="square-image">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="contact" class="container">
+        <div class="row">
+            <div class="col-md-6">
+                <h2>Contact</h2>
+                <p>Please contact me via email or social media below</p>
+                <!-- Daftar informasi kontak -->
+                <ul class="contact-info">
+                    <li><a href="mailto:muh.rizqullah@students.amikom.ac.id"><i
+                                class="fas fa-envelope"></i>asyrafrizqullah01@gmail.com</a></li>
+                    <li><a href="https://www.linkedin.com/in/asyraf-rizqullah-9695a9211/" target="_blank"><i
+                                class="fab fa-linkedin"></i>Asyraf Rizqullah</a></li>
+                    <li><a href="https://www.instagram.com/asyraf.rizqullah/" target="_blank"><i
+                                class="fab fa-instagram"></i> asyraf.rizqullah</a></li>
+                    <li><a href="https://www.facebook.com/asyraf.geeb/" target="_blank"><i
+                                class="fab fa-facebook"></i>Muhammad Asyraf Rizqullah</a></li>
+                    <li><a href="https://api.whatsapp.com/send?phone=6282296420613" target="_blank"><i
+                                class="fab fa-whatsapp"></i>082296420613</a></li>
+                </ul>
+            </div>
+        </div>
+    </section>
+    <footer class="text-center py-3">
+        <p>copyright &copy; 2023 | Lets Collaborate</p>
     </footer>
+
+    <!-- Menghubungkan script jQuery, Popper.js, dan Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.3/dist/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <script src="./script.js"></script>
+
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script>
+        document.addEventListener('DOMContentLoaded', function () {
+            const chatMessages = document.getElementById('chatMessages');
+            const chatInput = document.querySelector('[name="message"]');
+            const chatForm = document.getElementById('chatForm');
+
+            chatForm.addEventListener('submit', function (event) {
+                event.preventDefault();
+                const message = chatInput.value.trim();
+
+                if (message !== "") {
+                    // Kirim pesan ke server atau proses sesuai kebutuhan Anda
+
+                    // Tambahkan pesan ke tampilan
+                    const messageDiv = document.createElement('div');
+                    messageDiv.classList.add('message', 'user');
+                    messageDiv.innerHTML = message;
+                    chatMessages.appendChild(messageDiv);
+
+                    // Reset input
+                    chatInput.value = "";
+                }
+            });
+
+            // Event listener untuk memulai chatingan
+            chatMessages.addEventListener('click', function (event) {
+                if (event.target && event.target.classList.contains('message')) {
+                    const messageContent = event.target.innerText;
+                    chatInput.value = messageContent;
+                }
+            });
+        });
+    </script>
 </body>
 
 </html>
